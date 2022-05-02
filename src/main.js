@@ -4,4 +4,12 @@ import {
 import App from './App.vue'
 import router from './router'
 
-createApp(App).use(router).mount('#app')
+// 代码高亮
+import 'highlight.js/styles/stackoverflow-light.css'
+import 'highlight.js/lib/common';
+import hljsVuePlugin from "@highlightjs/vue-plugin";
+
+createApp(App)
+    .use(router)
+    .use(hljsVuePlugin)
+    .mount('#app')
