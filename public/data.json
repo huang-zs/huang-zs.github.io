@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Home",
+        "url": "/",
+        "component": "../views/Home"
+    },
+    {
+        "name": "Menu1",
+        "url": "/menu1",
+        "component": "component1"
+    },
+    {
+        "name": "Menu2",
+        "childrens": [
+            {
+                "name": "Menu21",
+                "url": "/menu21",
+                "component": "component21"
+            },
+            {
+                "name": "Menu22",
+                "url": "/menu22",
+                "component": "component22"
+            }
+        ]
+    }
+]

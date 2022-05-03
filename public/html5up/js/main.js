@@ -121,12 +121,13 @@
 		event.preventDefault();
 		event.stopPropagation();
 
+		//项目不使用<a></a>所以直接隐藏菜单
+		// Hide sidebar.
+		$sidebar.addClass('inactive');
+
 		// Check URL.
 		if (!href || href == '#' || href == '')
 			return;
-
-		// Hide sidebar.
-		$sidebar.addClass('inactive');
 
 		// Redirect to href.
 		setTimeout(function () {

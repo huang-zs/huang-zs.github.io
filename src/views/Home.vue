@@ -16,7 +16,7 @@
       </ul>
     </div>
     <span class="image object">
-      <img src="images/pic10.jpg" alt />
+      <img src alt />
     </span>
   </section>
 </template>

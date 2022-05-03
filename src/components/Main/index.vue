@@ -4,9 +4,6 @@
       <!-- Header -->
       <main-header></main-header>
 
-      <!-- Banner -->
-      <main-banner></main-banner>
-
       <slot></slot>
     </div>
   </div>
