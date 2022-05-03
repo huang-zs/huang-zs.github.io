@@ -12,4 +12,4 @@ import hljsVuePlugin from "@highlightjs/vue-plugin";
 createApp(App)
     .use(router)
     .use(hljsVuePlugin)
-    .mount('#app')
+    .mount('#wrapper')
