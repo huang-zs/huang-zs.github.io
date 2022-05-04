@@ -13,8 +13,6 @@ const routes = [{
     name: 'category',
     component: () => import('@/components/Category')
   }
-
-
 ]
 
 const router = createRouter({

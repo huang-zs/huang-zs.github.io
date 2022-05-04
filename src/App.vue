@@ -5,7 +5,7 @@
   <left-sidebar></left-sidebar>
 </template>
 <script>
-import LeftSidebar from "./components/Sidebar";
+import LeftSidebar from "./components/Sidebar"
 import RightMain from "./components/Main"
 export default {
   name: 'app',

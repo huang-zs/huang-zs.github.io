@@ -57,6 +57,11 @@
     {
         "name": "Bug",
         "url": "/bug",
-        "component": "component1"
+        "childrens": [
+            {
+                "name": "Bug",
+                "url": "/bug"
+            }
+        ]
     }
 ]

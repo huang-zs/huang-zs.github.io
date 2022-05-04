@@ -28,12 +28,12 @@
 </template>
 
 <script>
-import data from '@/api/data'
+import menu from '@/api/menu'
 export default {
   name: 'SidebarMenu',
   data() {
     return {
-      menuArray: data.getMenu()
+      menuArray: menu
     }
   },
 }
