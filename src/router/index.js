@@ -9,14 +9,9 @@ const routes = [{
     component: () => import('@/views/Home')
   },
   {
-    path: '/:category',
-    name: 'articleList',
-    component: () => import('@/components/Common/ArticleList')
-  },
-  {
-    path: '/:category/:article',
-    name: 'article',
-    component: () => import('@/components/Common/Article')
+    path: '/:category+',
+    name: 'category',
+    component: () => import('@/components/Category')
   }
 
 

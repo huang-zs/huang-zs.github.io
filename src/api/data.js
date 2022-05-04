@@ -16,7 +16,7 @@ export default {
                 const subMenus = [];
                 childrens.forEach(children => {
                     const subMenu = {};
-                    subMenu.url = children.url;
+                    subMenu.url = menu.url + children.url;
                     subMenu.name = children.name;
                     subMenus.push(subMenu);
                 });
@@ -24,8 +24,35 @@ export default {
             }
             menuArray.push(menu);
         });
-        console.log(menuArray)
         return menuArray;
+    },
+
+    /**
+     * 根据分类路径获取分类
+     * @param {*} categoryUrls [ "backend", "springboot" ]
+     * @returns `{name: 'Springboot', url: '/springboot', childrens: Array(2)}`
+     */
+    getCategoryByCategoryUrls(categoryUrls) {
+        return getItemByUrls(categoryUrls, this.datas);
     }
 
+}
+
+/**
+ * 
+ * @param {*} urls [ "backend", "springboot" ]
+ * @param {*} datas 
+ * @returns `{name: 'Springboot', url: '/springboot', childrens: Array(2)}`
+ */
+function getItemByUrls(urls, datas) {
+    for (let index = 0; index < datas.length; index++) {
+        const data = datas[index];
+        if (data.url == "/" + urls[0]) {
+            if (urls.length > 1)
+                return getItemByUrls(urls.slice(1), data.childrens);
+            else
+                return data;
+        }
+    }
+    return null;
 }
