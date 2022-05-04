@@ -1,6 +1,6 @@
 <template>
   <right-main>
-    <router-view />
+    <router-view :key="key" />
   </right-main>
   <left-sidebar></left-sidebar>
 </template>
@@ -9,6 +9,11 @@ import LeftSidebar from "./components/Sidebar";
 import RightMain from "./components/Main"
 export default {
   name: 'app',
-  components: { LeftSidebar, RightMain }
+  components: { LeftSidebar, RightMain },
+  computed: {
+    key() {
+      return this.$route + new Date();
+    }
+  }
 }
 </script>
