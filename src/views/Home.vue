@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: 'HomeView'
+  name: 'home-view'
 }
 </script>
 

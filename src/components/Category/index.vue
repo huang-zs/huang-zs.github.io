@@ -21,14 +21,13 @@
 </template>
 
 <script>
-import data from '@/api/data'
 import BannerItem from '@/components/Banner'
 import CategoryArticleItem from '@/components/Category/Article'
 export default {
   name: "CateogryItem",
   data() {
     return {
-      category: data.getCategoryByCategoryUrls(this.$route.params.category)
+      category: null
     }
   },
   components: { BannerItem, CategoryArticleItem }

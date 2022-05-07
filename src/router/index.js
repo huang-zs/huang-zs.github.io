@@ -5,12 +5,10 @@ import {
 
 const routes = [{
     path: '/',
-    name: 'home',
-    component: () => import('@/views/Home')
+    redirect: '/home'
   },
   {
     path: '/:category+',
-    name: 'category',
     component: () => import('@/components/Category')
   }
 ]
@@ -20,4 +18,14 @@ const router = createRouter({
   routes
 })
 
+// 根据文件目录导入article(.vue文件)
+const views = require.context('@/views', true, /.*\.vue/)
+views.keys().forEach(view => {
+  const path = view.match(/\.(.*)\.vue$/)[1]
+  router.addRoute({
+    'path': path,
+    'component': () => import(`@/views${path}`)
+  })
+});
+console.log(router.getRoutes())
 export default router

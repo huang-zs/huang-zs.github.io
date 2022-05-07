@@ -4,18 +4,18 @@
       <h2>Menu</h2>
     </header>
     <ul>
-      <li v-for="(item,index) in menuArray" :key="index">
+      <li v-for="(menu,index) in menuArray" :key="index">
         <!-- 一级标题 -->
-        <template v-if="item.subMenus==null">
-          <router-link :to="item.url">
-            <a href="#">{{item.name}}</a>
+        <template v-if="menu.childrens==null">
+          <router-link :to="menu.url">
+            <a href="#">{{menu.name}}</a>
           </router-link>
         </template>
         <!-- 二级标题 -->
         <template v-else>
-          <span class="opener">{{item.name}}</span>
+          <span class="opener">{{menu.name}}</span>
           <ul>
-            <li v-for=" (subMenu,index) in item.subMenus" :key="index">
+            <li v-for=" (subMenu,index) in menu.childrens" :key="index">
               <router-link :to="subMenu.url">
                 <a href="#">{{subMenu.name}}</a>
               </router-link>
@@ -28,12 +28,13 @@
 </template>
 
 <script>
-import menu from '@/api/menu'
+import menus from "@/api/menu";
+
 export default {
   name: 'SidebarMenu',
   data() {
     return {
-      menuArray: menu
+      menuArray: menus
     }
   },
 }
