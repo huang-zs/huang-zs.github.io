@@ -9,4 +9,6 @@ menus.forEach(menu => {
         });
 });
 
-export default menus
+export {
+    menus
+}

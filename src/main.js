@@ -1,4 +1,10 @@
 import {
+    checkData
+} from '@/api/data'
+
+checkData()
+
+import {
     createApp
 } from 'vue'
 import App from './App.vue'

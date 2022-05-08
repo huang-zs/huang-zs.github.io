@@ -10,11 +10,11 @@
   <section>
     <div class="posts">
       <category-article-item
-        v-for="(article,index) in category.childrens"
-        :key="index"
-        :title="article.name"
+        v-for="(article,key) in category.childrens"
+        :key="key"
+        :title="key"
         :description="article.description"
-        :url="article.url"
+        :url="this.$route.path+'/'+key"
       ></category-article-item>
     </div>
   </section>
@@ -23,13 +23,16 @@
 <script>
 import BannerItem from '@/components/Banner'
 import CategoryArticleItem from '@/components/Category/Article'
+import { getCategory } from '@/api/data'
+
 export default {
   name: "CateogryItem",
   data() {
     return {
-      category: null
+      category: getCategory(this.$route.params.category.pop())
     }
-  },
+  }
+  ,
   components: { BannerItem, CategoryArticleItem }
 }
 </script>

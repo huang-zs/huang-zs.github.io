@@ -27,5 +27,5 @@ views.keys().forEach(view => {
     'component': () => import(`@/views${path}`)
   })
 });
-console.log(router.getRoutes())
+
 export default router

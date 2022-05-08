@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import menus from "@/api/menu";
+import { menus } from "@/api/menu";
 
 export default {
   name: 'SidebarMenu',
