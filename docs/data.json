@@ -1,27 +1,22 @@
-[
-    {
-        "name": "Home",
-        "url": "/",
-        "component": "../views/Home"
-    },
-    {
-        "name": "Menu1",
-        "url": "/menu1",
-        "component": "component1"
-    },
-    {
-        "name": "Menu2",
-        "childrens": [
-            {
-                "name": "Menu21",
-                "url": "/menu21",
-                "component": "component21"
-            },
-            {
-                "name": "Menu22",
-                "url": "/menu22",
-                "component": "component22"
+{
+    "java": {
+        "description": "java.description",
+        "img": "/public/image/backend/springboot/index.png",
+        "doc": "http://www.baidu.com",
+        "childrens": {
+            "bloom-filter": {
+                "description": "布隆过滤器的原理和实现",
+                "img": "/public/image/backend/springboot/index.png",
+                "doc": "https://en.wikipedia.org/wiki/Bloom_filter"
             }
-        ]
-    }
-]
+        }
+    },
+    "springboot": {
+        "childrens": {
+            "spring-boot-data-jpa": {}
+        }
+    },
+    "html": {},
+    "vue": {},
+    "bug": {}
+}
