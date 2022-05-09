@@ -4,7 +4,9 @@
     <p>{{description}}</p>
     <ul class="actions">
       <li>
-        <a :href="url" class="button">More</a>
+        <router-link :to="url">
+          <a href="#" class="button">More</a>
+        </router-link>
       </li>
     </ul>
   </article>
