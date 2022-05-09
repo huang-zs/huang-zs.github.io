@@ -2,7 +2,6 @@ import data from '../../public/data.json'
 
 export function getCategory(category) {
     const categoryInfo = data[category]
-    console.log(categoryInfo)
     if (categoryInfo == null)
         throw Error(`category[${category}] not exist`)
     categoryInfo.name = category
@@ -18,10 +17,9 @@ export function getArticle(category, article) {
 }
 
 export function checkData() {
-    const views = require.context('@/views', true, /.*\.vue/)
+    const views = require.context('@/views', true, /.*\.vue/).keys()
     // check view contain data
-    views.keys().forEach(view => {
-        console.log(view)
+    views.forEach(view => {
         const splits = view.split('/')
         if (splits.length > 2) {
             const category = splits[splits.length - 2]
@@ -29,5 +27,21 @@ export function checkData() {
             getArticle(category, article.substring(0, article.indexOf('.vue')))
         }
     });
-    // TODO check data contain view
+
+    // check data contain view
+    for (var categoryKey in data) {
+        const category = data[categoryKey]
+        for (var articleKey in category.childrens) {
+            var exist = false
+            for (let index = views.length - 1; index >= 0; index--) {
+                if (views[index].endsWith(`${categoryKey}/${articleKey}.vue`)) {
+                    exist = true
+                    views.splice(index, 1)
+                    break
+                }
+            }
+            if (!exist)
+                throw Error(`category[${categoryKey}] article[${articleKey}] view not exist`)
+        }
+    }
 }

@@ -11,11 +11,7 @@
             }
         }
     },
-    "springboot": {
-        "childrens": {
-            "spring-boot-data-jpa": {}
-        }
-    },
+    "springboot": {},
     "html": {},
     "vue": {},
     "bug": {}
