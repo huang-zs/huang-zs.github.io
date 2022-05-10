@@ -11,12 +11,17 @@
             }
         }
     },
-    "springboot": {
+    "springboot": {},
+    "html": {},
+    "vue": {
+        "description": "vue.description",
+        "img": "/public/image/backend/springboot/index.png",
+        "doc": "http://www.baidu.com",
         "childrens": {
-            "spring-boot-data-jpa": {}
+            "reuse-component-router-bug": {
+                "description": "vue组件重用路由不刷新"
+            }
         }
     },
-    "html": {},
-    "vue": {},
     "bug": {}
 }
