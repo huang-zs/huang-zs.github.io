@@ -9,20 +9,19 @@
   </section>
   <section>
     <div class="posts">
-      <category-article-item
+      <article-item
         v-for="(article,key) in category.childrens"
         :key="key"
         :title="key"
         :description="article.description"
-        :url="this.$route.path+'/'+key"
-      ></category-article-item>
+      ></article-item>
     </div>
   </section>
 </template>
 
 <script>
 import BannerItem from '@/components/Banner'
-import CategoryArticleItem from '@/components/Category/Article'
+import ArticleItem from '@/components/Article/ArticleItem.vue'
 import { getCategory } from '@/api/data'
 
 export default {
@@ -33,6 +32,6 @@ export default {
     }
   }
   ,
-  components: { BannerItem, CategoryArticleItem }
+  components: { BannerItem, ArticleItem }
 }
 </script>

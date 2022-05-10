@@ -1,13 +1,23 @@
 <template>
   <section id="search" class="alt">
-    <form method="post" action="#">
-      <input type="text" name="query" id="query" placeholder="Search" />
+    <form action="javascript:;">
+      <input type="text" v-model="query" placeholder="Search" @keyup.enter="articleQuery" />
     </form>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'SidebarSearch'
+  name: 'SidebarSearch',
+  data() {
+    return {
+      query: null
+    }
+  },
+  methods: {
+    articleQuery() {
+      this.$router.push({ name: 'search', 'params': { 'query': this.query } })
+    }
+  },
 }
 </script>

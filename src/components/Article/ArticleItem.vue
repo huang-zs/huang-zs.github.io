@@ -4,7 +4,7 @@
     <p>{{description}}</p>
     <ul class="actions">
       <li>
-        <router-link :to="url">
+        <router-link :to="{name:title}">
           <a href="#" class="button">More</a>
         </router-link>
       </li>
@@ -14,16 +14,13 @@
 
 <script>
 export default {
-  name: 'CategoryArticleItem',
+  name: 'ArticleItem',
   props: {
     title: {
       required: true
     },
     description: {
       default: 'default description'
-    },
-    url: {
-      required: true
     }
   }
 }

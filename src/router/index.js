@@ -9,7 +9,13 @@ const routes = [{
   },
   {
     path: '/:category+',
+    name: 'category',
     component: () => import('@/components/Category')
+  },
+  {
+    path: '/search',
+    name: 'search',
+    component: () => import('@/components/Article')
   }
 ]
 
@@ -24,8 +30,11 @@ views.keys().forEach(view => {
   const path = view.match(/\.(.*)\.vue$/)[1]
   router.addRoute({
     'path': path,
+    'name': path.substring(path.lastIndexOf('/') + 1),
     'component': () => import(`@/views${path}`)
   })
 });
+
+console.log(router.getRoutes());
 
 export default router

@@ -1,19 +1,23 @@
 import data from '../../public/data.json'
 
 export function getCategory(category) {
-    const categoryInfo = data[category]
-    if (categoryInfo == null)
+    try {
+        const categoryInfo = data[category]
+        categoryInfo.name = category
+        return categoryInfo
+    } catch (error) {
         throw Error(`category[${category}] not exist`)
-    categoryInfo.name = category
-    return categoryInfo
+    }
 }
 
 export function getArticle(category, article) {
-    const articleInfo = getCategory(category).childrens[article]
-    if (articleInfo == null)
+    try {
+        const articleInfo = getCategory(category).childrens[article]
+        articleInfo.name = article
+        return articleInfo
+    } catch (error) {
         throw Error(`category[${category}] article[${article}] not exist`)
-    articleInfo.name = article
-    return articleInfo
+    }
 }
 
 export function checkData() {
@@ -29,7 +33,7 @@ export function checkData() {
     });
 
     // check data contain view
-    for (var categoryKey in data) {
+    for (const categoryKey in data) {
         const category = data[categoryKey]
         for (var articleKey in category.childrens) {
             var exist = false
@@ -44,4 +48,23 @@ export function checkData() {
                 throw Error(`category[${categoryKey}] article[${articleKey}] view not exist`)
         }
     }
+}
+
+export function searchArticles(query) {
+    const articles = []
+    for (const categoryKey in data) {
+        const category = data[categoryKey]
+        for (const articleKey in category.childrens) {
+            const article = category.childrens[articleKey]
+            if (articleKey.includes(query)) {
+                articles.push(article)
+            } else {
+                if (article.description == null ? false : article.description.includes(query))
+                    articles.push(article)
+            }
+
+        }
+    }
+    console.log('searchArticles', articles)
+    return articles
 }
