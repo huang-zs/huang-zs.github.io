@@ -7,23 +7,18 @@
     </router-link>
     <ul class="icons">
       <li>
-        <a href="#" class="icon brands fa-weixin">
+        <a href="#" class="icon brands icon-weixin">
           <span class="label">weixin</span>
         </a>
       </li>
       <li>
-        <a href="#" class="icon brands fa-qq">
+        <a href="#" class="icon brands icon-qq">
           <span class="label">qq</span>
         </a>
       </li>
       <li>
-        <a href="#" class="icon brands fa-github">
+        <a href="#" class="icon brands icon-github">
           <span class="label">github</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="icon brands fa-weibo">
-          <span class="label">weibo</span>
         </a>
       </li>
     </ul>
