@@ -1,24 +1,24 @@
 [
     {
-        "title": "stackoverflow",
-        "description": "stackoverflow是一个与程序相关的IT技术问答网站。用户可以在网站免费提交问题，浏览问题，索引相关内容。",
+        "title": "Stackoverflow",
+        "description": "Stackoverflow是一个与程序相关的IT技术问答网站。用户可以在网站免费提交问题，浏览问题，索引相关内容。",
         "icon": "icon-stackoverflow",
         "link": "https://stackoverflow.com/"
     },
     {
-        "title": "github",
+        "title": "Github",
         "description": "GitHub 是一个面向开源及私有软件项目的托管平台，用户可以探寻自己感兴趣的项目、分享源代码、交流学习。",
         "icon": "icon-github",
         "link": "https://github.com/"
     },
     {
-        "title": "docker",
+        "title": "Docker",
         "description": "Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows操作系统的机器上，也可以实现虚拟化。",
         "icon": "icon-docker",
         "link": "https://hub.docker.com/"
     },
     {
-        "title": "maven",
+        "title": "Maven",
         "description": "Maven项目对象模型(POM)，可以通过一小段描述信息来管理项目的构建，报告和文档的项目管理工具软件",
         "icon": "icon-maven",
         "link": "https://mvnrepository.com/"

@@ -1,12 +1,10 @@
 <template>
-  <section>
-    <banner-item
-      :title="category.name"
-      :description="category.description"
-      :img="category.img"
-      :doc="category.doc"
-    ></banner-item>
-  </section>
+  <banner-item
+    :title="category.name"
+    :description="category.description"
+    :img="category.img"
+    :doc="category.doc"
+  ></banner-item>
   <section>
     <div class="posts">
       <article-item

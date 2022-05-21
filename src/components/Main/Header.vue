@@ -10,7 +10,7 @@
       frameborder="0"
       scrolling="0"
       title="GitHub"
-      width="10%"
+      width="100px"
     ></iframe>
     <!-- <ul class="icons">
       <li>
