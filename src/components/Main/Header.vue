@@ -1,11 +1,18 @@
 <template>
   <header id="header">
-    <router-link to="/">
-      <a href="#" class="logo">
-        <strong>Power</strong> by huang-zs
-      </a>
+    <router-link to="/" class="logo">
+      <strong>Power</strong> by huang-zs
     </router-link>
-    <ul class="icons">
+    <iframe
+      style=" position: absolute;
+  right: 0;"
+      src="https://ghbtns.com/github-btn.html?user=huang-zs&repo=huang-zs.github.io&type=star&count=true"
+      frameborder="0"
+      scrolling="0"
+      title="GitHub"
+      width="10%"
+    ></iframe>
+    <!-- <ul class="icons">
       <li>
         <a href="#" class="icon brands icon-weixin">
           <span class="label">weixin</span>
@@ -21,7 +28,7 @@
           <span class="label">github</span>
         </a>
       </li>
-    </ul>
+    </ul>-->
   </header>
 </template>
 

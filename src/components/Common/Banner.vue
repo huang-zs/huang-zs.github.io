@@ -3,7 +3,7 @@
     <div class="content">
       <header>
         <h1>{{title}}</h1>
-        <!-- <p>A free and fully responsive site template</p> -->
+        <p>{{subTitle}}</p>
       </header>
       <p>{{description}}</p>
       <ul class="actions">
@@ -32,7 +32,10 @@ export default {
       default: '/image/default.jpg'
     },
     doc: {
-      default: '#'
+      default: 'https://github.com/huang-zs/huang-zs.github.io'
+    },
+    subTitle: {
+      default: ''
     }
   }
 }

@@ -14,15 +14,16 @@
         :key="key"
         :title="key"
         :description="article.description"
+        :img="article.img"
       ></article-item>
     </div>
   </section>
 </template>
 
 <script>
-import BannerItem from '@/components/Banner'
+import BannerItem from '@/components/Common/Banner'
 import ArticleItem from '@/components/Article/ArticleItem.vue'
-import { getCategory } from '@/api/data'
+import { getCategory } from '@/api/article'
 
 export default {
   name: "CateogryItem",

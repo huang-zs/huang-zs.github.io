@@ -1,12 +1,13 @@
 <template>
   <article>
+    <a href="#" class="image">
+      <img :src="img" />
+    </a>
     <h3>{{title}}</h3>
     <p>{{description}}</p>
     <ul class="actions">
       <li>
-        <router-link :to="{name:title}">
-          <a href="#" class="button">More</a>
-        </router-link>
+        <router-link :to="{name:title}" class="button">More</router-link>
       </li>
     </ul>
   </article>
@@ -21,6 +22,9 @@ export default {
     },
     description: {
       default: 'default description'
+    },
+    img: {
+      default: '/image/default.jpg'
     }
   }
 }

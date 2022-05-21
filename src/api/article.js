@@ -1,4 +1,7 @@
-import data from '../../public/data.json'
+/**
+ * @file 博客文章相关
+ */
+import data from '@/assets/data/article.json'
 
 export function getCategory(category) {
     try {
@@ -20,9 +23,12 @@ export function getArticle(category, article) {
     }
 }
 
+/**
+ * 检查文章信息和文章页面是否都存在
+ */
 export function checkData() {
     const views = require.context('@/views', true, /.*\.vue/).keys()
-    // check view contain data
+    // 检查页面是否包含对应的文章信息
     views.forEach(view => {
         const splits = view.split('/')
         if (splits.length > 2) {
@@ -32,7 +38,7 @@ export function checkData() {
         }
     });
 
-    // check data contain view
+    // 检查文章信息是否包含对应的页面
     for (const categoryKey in data) {
         const category = data[categoryKey]
         for (var articleKey in category.childrens) {
@@ -50,21 +56,25 @@ export function checkData() {
     }
 }
 
+/**
+ * 查询分类或者文章,支持大小写
+ * @param {*} query 查询
+ * @returns 分类或者文章列表
+ */
 export function searchArticles(query) {
     const articles = []
     for (const categoryKey in data) {
         const category = data[categoryKey]
         for (const articleKey in category.childrens) {
             const article = category.childrens[articleKey]
-            if (articleKey.includes(query)) {
+            if (articleKey.toLowerCase().includes(query)) {
                 articles.push(article)
             } else {
-                if (article.description == null ? false : article.description.includes(query))
+                if (article.description == null ? false : article.description.toLowerCase().includes(query))
                     articles.push(article)
             }
 
         }
     }
-    console.log('searchArticles', articles)
     return articles
 }

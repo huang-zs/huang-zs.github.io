@@ -1,6 +1,6 @@
 import {
     checkData
-} from '@/api/data'
+} from '@/api/article'
 
 checkData()
 

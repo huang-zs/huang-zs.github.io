@@ -35,6 +35,4 @@ views.keys().forEach(view => {
   })
 });
 
-console.log(router.getRoutes());
-
 export default router

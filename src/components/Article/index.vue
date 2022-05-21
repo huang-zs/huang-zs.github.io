@@ -1,16 +1,19 @@
 <template>
   <section>
-    <article-item
-      v-for="article in articles"
-      :key="article.name"
-      :title="article.name"
-      :description="article.description"
-    ></article-item>
+    <div class="posts">
+      <article-item
+        v-for="article in articles"
+        :key="article.name"
+        :title="article.name"
+        :description="article.description"
+        :img="article.img"
+      ></article-item>
+    </div>
   </section>
 </template>
 
 <script>
-import { searchArticles } from "@/api/data";
+import { searchArticles } from "@/api/article";
 import ArticleItem from '@/components/Article/ArticleItem'
 export default {
   name: "ArticleListItem",

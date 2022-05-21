@@ -1,4 +1,7 @@
-import menus from '../../public/menu.json'
+/**
+ * @file 菜单相关
+ */
+import menus from '@/assets/data/menu.json'
 
 menus.forEach(menu => {
     const url = '/' + menu.name

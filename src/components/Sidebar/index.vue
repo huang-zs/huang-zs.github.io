@@ -8,7 +8,7 @@
       <sidebar-menu></sidebar-menu>
 
       <!-- Get in touch -->
-      <sidebar-get-in-touch></sidebar-get-in-touch>
+      <!-- <sidebar-get-in-touch></sidebar-get-in-touch> -->
 
       <!-- Footer -->
       <sidebar-footer></sidebar-footer>
@@ -19,11 +19,15 @@
 <script>
 import SidebarMenu from './Menu'
 import SidebarSearch from "./Search";
-import SidebarGetInTouch from './GetInTouch'
+// import SidebarGetInTouch from './GetInTouch'
 import SidebarFooter from './Footer'
 export default {
   name: 'LeftSidebar',
-  components: { SidebarMenu, SidebarSearch, SidebarGetInTouch, SidebarFooter }
+  components: {
+    SidebarMenu, SidebarSearch,
+    // SidebarGetInTouch,
+    SidebarFooter
+  }
 }
 </script>
 

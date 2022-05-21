@@ -1,12 +1,11 @@
 {
     "java": {
         "description": "java.description",
-        "img": "/public/image/backend/springboot/index.png",
+        "img": "/image/backend/springboot/index.png",
         "doc": "http://www.baidu.com",
         "childrens": {
             "bloom-filter": {
                 "description": "布隆过滤器的原理和实现",
-                "img": "/public/image/backend/springboot/index.png",
                 "doc": "https://en.wikipedia.org/wiki/Bloom_filter"
             }
         }
@@ -15,7 +14,7 @@
     "html": {},
     "vue": {
         "description": "vue.description",
-        "img": "/public/image/backend/springboot/index.png",
+        "img": "/image/backend/springboot/index.png",
         "doc": "http://www.baidu.com",
         "childrens": {
             "reuse-component-router-bug": {

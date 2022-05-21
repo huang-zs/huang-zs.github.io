@@ -7,18 +7,14 @@
       <li v-for="(menu,index) in menuArray" :key="index">
         <!-- 一级标题 -->
         <template v-if="menu.childrens==null">
-          <router-link :to="menu.url">
-            <a href="#">{{menu.name}}</a>
-          </router-link>
+          <router-link :to="menu.url">{{menu.name}}</router-link>
         </template>
         <!-- 二级标题 -->
         <template v-else>
           <span class="opener">{{menu.name}}</span>
           <ul>
             <li v-for=" (subMenu,index) in menu.childrens" :key="index">
-              <router-link :to="subMenu.url">
-                <a href="#">{{subMenu.name}}</a>
-              </router-link>
+              <router-link :to="subMenu.url">{{subMenu.name}}</router-link>
             </li>
           </ul>
         </template>
