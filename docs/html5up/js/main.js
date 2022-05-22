@@ -261,4 +261,11 @@
 
 	});
 
+	// 搜索框 回车隐藏菜单
+	var $searchForm = $('#search input')
+	$searchForm.on('keydown', function (event) {
+		if (event.keyCode == "13")
+			$sidebar.addClass('inactive');
+	})
+
 })(jQuery);
