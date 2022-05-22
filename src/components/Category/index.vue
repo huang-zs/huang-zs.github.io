@@ -1,36 +1,34 @@
 <template>
   <banner-item
-    :title="category.name"
+    :title="category.title"
+    :subTitle="category.subTitle"
     :description="category.description"
     :img="category.img"
     :doc="category.doc"
   ></banner-item>
-  <section>
-    <div class="posts">
-      <article-item
-        v-for="(article,key) in category.childrens"
-        :key="key"
-        :title="key"
-        :description="article.description"
-        :img="article.img"
-      ></article-item>
-    </div>
-  </section>
+  <article-list :articles="articles"></article-list>
 </template>
 
 <script>
 import BannerItem from '@/components/Common/Banner'
-import ArticleItem from '@/components/Article/ArticleItem.vue'
+import ArticleList from '@/components/Article/ArticleList'
 import { getCategory } from '@/api/article'
 
 export default {
   name: "CateogryItem",
   data() {
     return {
-      category: getCategory(this.$route.params.category.pop())
+      category: {},
+      articles: []
     }
   }
   ,
-  components: { BannerItem, ArticleItem }
+  components: { BannerItem, ArticleList },
+  mounted() {
+    this.category = getCategory(this.$route.params.category.pop());
+    for (const articleKey in this.category.childrens) {
+      this.articles.push(this.category.childrens[articleKey])
+    }
+  }
 }
 </script>

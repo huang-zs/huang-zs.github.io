@@ -1,13 +1,13 @@
 <template>
   <article>
-    <a href="#" class="image">
-      <img :src="img" />
-    </a>
-    <h3>{{title}}</h3>
-    <p>{{description}}</p>
+    <router-link :to="{name:article.name}" class="image">
+      <img :src="article.img" />
+    </router-link>
+    <h2>{{article.title}}</h2>
+    <p>{{article.description}}</p>
     <ul class="actions">
       <li>
-        <router-link :to="{name:title}" class="button">More</router-link>
+        <router-link :to="{name:article.name}" class="button">More</router-link>
       </li>
     </ul>
   </article>
@@ -17,14 +17,8 @@
 export default {
   name: 'ArticleItem',
   props: {
-    title: {
+    article: {
       required: true
-    },
-    description: {
-      default: 'default description'
-    },
-    img: {
-      default: '/image/default.jpg'
     }
   }
 }

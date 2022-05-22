@@ -1,28 +1,16 @@
 <template>
-  <section>
-    <div class="posts">
-      <article-item
-        v-for="article in articles"
-        :key="article.name"
-        :title="article.name"
-        :description="article.description"
-        :img="article.img"
-      ></article-item>
-    </div>
+  <section class="article">
+    <article-banner></article-banner>
+    <hr class="major" />
+    <slot></slot>
   </section>
 </template>
 
 <script>
-import { searchArticles } from "@/api/article";
-import ArticleItem from '@/components/Article/ArticleItem'
+import ArticleBanner from '@/components/Article/ArticleBanner.vue'
 export default {
-  name: "ArticleListItem",
-  data() {
-    return {
-      articles: searchArticles(this.$route.params.query)
-    }
-  },
-  components: { ArticleItem }
+  name: 'ArticleInfo',
+  components: { ArticleBanner }
 }
 </script>
 

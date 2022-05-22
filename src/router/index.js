@@ -15,7 +15,7 @@ const routes = [{
   {
     path: '/search',
     name: 'search',
-    component: () => import('@/components/Article')
+    component: () => import('@/components/Common/SearchResult')
   }
 ]
 
