@@ -9,7 +9,7 @@
 <script>
 import ArticleBanner from '@/components/Article/ArticleBanner.vue'
 export default {
-  name: 'ArticleInfo',
+  name: 'ArticleInfoItem',
   components: { ArticleBanner }
 }
 </script>

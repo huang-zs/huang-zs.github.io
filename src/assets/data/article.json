@@ -9,7 +9,7 @@
             "bloom-filter": {
                 "title": "布隆过滤器的原理和实现",
                 "description": "布隆过滤器的原理和实现",
-                "img": "/image/default.jpg",
+                "img": "https://cdn.pixabay.com/photo/2022/02/16/14/47/bird-7016926_1280.jpg",
                 "doc": "https://en.wikipedia.org/wiki/Bloom_filter"
             }
         }
@@ -51,8 +51,8 @@
         "childrens": {
             "reuse-component-router-bug": {
                 "title": "vue组件重用路由不刷新",
-                "description": "vue组件重用路由不刷新vue组件重用路由不刷新vue组件重用路由不刷新vue组件重用路由不刷新vue组件重用路由不刷新vue组件重用路由不刷新vue组件重用路由不刷新vue组件重用路由不刷新vue组件重用路由不刷新vue组件重用路由不刷新vue组件重用路由不刷新",
-                "img": "/image/default.jpg"
+                "description": "在使用vue-router时，经常会用到带参数的动态路由如 { path: '/users/:id', component: User }，当用户从 /users/johnny 导航到 /users/jolyne 时，因为指向的都是同一个组件，相同的组件实例将被重复使用（组件的生命周期钩子不会被调用），所以出现页面数据没有刷新的情况。",
+                "img": "https://cdn.pixabay.com/photo/2022/04/12/09/03/bird-7127630_1280.jpg"
             }
         }
     },

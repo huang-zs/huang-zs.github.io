@@ -16,14 +16,14 @@ export default {
   name: 'UtilItem',
   props: {
     icon: {
-      require
+      require: true
     }, title: {
-      require
+      require: true
     }, description: {
-      require
+      require: true
     },
     link: {
-      require
+      require: true
     }
   }
 }
