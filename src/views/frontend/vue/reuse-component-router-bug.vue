@@ -8,7 +8,10 @@
     </h2>
     <p>
       使用
-      <a href="https://v3.cn.vuejs.org/guide/reactivity-computed-watchers.html#watch  ">watch</a> api 监听
+      <a
+        href="https://v3.cn.vuejs.org/guide/reactivity-computed-watchers.html#watch"
+        target="_blank"
+      >watch</a> api 监听
       <code>$route</code> 对象上的任意属性，如
       <code>$route.params</code>:
     </p>
@@ -17,6 +20,7 @@
       使用
       <a
         href="https://router.vuejs.org/zh/guide/advanced/navigation-guards.html"
+        target="_blank"
       >beforeRouteUpdate</a> 导航守卫 ：
     </p>
     <highlightjs autodetect :code="code2" />
@@ -27,6 +31,11 @@
       <code>&lt;router-view/&gt;</code>加上key属性:
     </p>
     <highlightjs autodetect :code="code3" />
+    <p>
+      上面的解决方案在使用带查询参数的路由无效，如:
+      <code>{ path: '/register', query: { plan: 'private' } }</code>，应该改为:
+    </p>
+    <highlightjs autodetect :code="code4" />
   </article-info>
 </template>
 
@@ -54,7 +63,17 @@ export default {
     // 对路由变化做出响应...
   },
 }`,
-      code3: `<router-view :key="$route.fullPath" />`
+      code3: `<router-view :key="$route.fullPath" /> `,
+      code4: `<router-view :key="key" />
+      
+const User = {
+  template: '...',
+  computed: {
+    key() {
+      return this.$route.fullPath + new Date();
+    }
+  }
+}`
     }
   },
 }

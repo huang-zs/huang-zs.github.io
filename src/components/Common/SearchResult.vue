@@ -10,9 +10,9 @@ export default {
   components: { ArticleList },
   data() {
     return {
-      articles: searchArticles(this.$route.params.query)
+      articles: searchArticles(this.$route.query.q)
     }
-  },
+  }
 }
 </script>
 

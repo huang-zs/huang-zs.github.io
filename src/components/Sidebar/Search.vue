@@ -16,7 +16,7 @@ export default {
   },
   methods: {
     articleQuery() {
-      this.$router.push({ name: 'search', 'params': { 'query': this.query } })
+      this.$router.push({ name: 'search', query: { q: this.query } })
     }
   },
 }
