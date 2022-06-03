@@ -4,8 +4,8 @@
 </template>
 
 <script>
-import Banner from '@/components/Common/Banner'
-import UtilSet from '@/components/Common/Util'
+import Banner from '@/components/Common/Banner.vue'
+import UtilSet from '@/components/Common/Util/index.vue'
 export default {
   name: 'home-view',
   components: { Banner, UtilSet },

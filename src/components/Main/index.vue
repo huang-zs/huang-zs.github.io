@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import MainHeader from './Header'
+import MainHeader from '@/components/Main/Header.vue'
 
 export default {
   name: 'RightMain',

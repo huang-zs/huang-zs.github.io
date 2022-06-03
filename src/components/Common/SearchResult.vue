@@ -4,7 +4,7 @@
 
 <script>
 import { searchArticles } from "@/api/article";
-import ArticleList from '@/components/Article/ArticleList'
+import ArticleList from '@/components/Article/ArticleList.vue'
 export default {
   name: 'SearchResult',
   components: { ArticleList },

@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import UtilItem from "@/components/Common/Util/UtilItem";
+import UtilItem from "@/components/Common/Util/UtilItem.vue";
 import utilData from "@/api/website"
 export default {
   name: 'UtilSetItem',

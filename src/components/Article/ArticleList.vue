@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import ArticleItem from '@/components/Article/ArticleItem'
+import ArticleItem from '@/components/Article/ArticleItem.vue'
 export default {
   name: "ArticleListItem",
   props: {

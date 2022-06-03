@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import BannerItem from '@/components/Common/Banner'
-import ArticleList from '@/components/Article/ArticleList'
+import BannerItem from '@/components/Common/Banner.vue'
+import ArticleList from '@/components/Article/ArticleList.vue'
 import { getCategory } from '@/api/article'
 
 export default {

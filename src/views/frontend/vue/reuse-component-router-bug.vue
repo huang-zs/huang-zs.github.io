@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import ArticleInfo from '@/components/Article'
+import ArticleInfo from '@/components/Article/index.vue'
 export default {
   name: 'reuse-component-router-bug-item',
   components: { ArticleInfo },
