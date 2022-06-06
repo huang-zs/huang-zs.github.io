@@ -9,8 +9,12 @@
             "bloom-filter": {
                 "title": "布隆过滤器的原理和实现",
                 "description": "布隆过滤器的原理和实现",
-                "img": "https://cdn.pixabay.com/photo/2022/02/16/14/47/bird-7016926_1280.jpg",
-                "doc": "https://en.wikipedia.org/wiki/Bloom_filter"
+                "img": "https://cdn.pixabay.com/photo/2022/02/16/14/47/bird-7016926_1280.jpg"
+            },
+            "idea": {
+                "title": "IDEA配置和快捷键",
+                "description": "用了sts三年了，网上都推荐idea，试试是不是传说中那么香，顺便记录一下一些基本配置和常用快捷键",
+                "img": "https://cdn.pixabay.com/photo/2022/05/31/18/40/hedge-7234019_1280.jpg"
             }
         }
     },
