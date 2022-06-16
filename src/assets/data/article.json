@@ -15,6 +15,11 @@
                 "title": "IDEA配置和快捷键",
                 "description": "用了sts三年了，网上都推荐idea，试试是不是传说中那么香，顺便记录一下一些基本配置和常用快捷键",
                 "img": "https://cdn.pixabay.com/photo/2022/05/31/18/40/hedge-7234019_1280.jpg"
+            },
+            "regex": {
+                "title": "正则表达式",
+                "description": "工作三年了，实习生拿了个正则表达式（.+?）来问我，我一时间没回答上来，发现自己还是太菜了，所以决定把用法复习一遍",
+                "img": "https://cdn.pixabay.com/photo/2022/05/31/16/47/automobile-7233867_960_720.jpg"
             }
         }
     },
