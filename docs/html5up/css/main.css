@@ -332,6 +332,10 @@ h6 {
   font-size: 0.7em;
 }
 
+.article {
+  margin: 0 10%
+}
+
 @media screen and (max-width: 1680px) {
   h1 {
     font-size: 3.5em;

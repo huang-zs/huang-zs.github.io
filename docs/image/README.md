@@ -3,4 +3,4 @@ image size
 1000 618
 500 309
 
-https://pixabay.com/photos/search/?pagi=2&orientation=horizontal&min_width=1000&min_height=618&
+https://pixabay.com/photos/search/?pagi=2&orientation=horizontal
