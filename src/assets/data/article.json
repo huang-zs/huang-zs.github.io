@@ -1,69 +1,74 @@
 {
-    "java": {
-        "title": "Java",
-        "subTitle": "一种跨平台、面向对象的计算机编程语言",
-        "description": "Java是Sun公司推出的能够跨越多平台的、可移植性最高的一种面向对象的编程语言，也是目前最先进、特征最丰富、功能最强大的计算机语言。利用Java可以编写桌面应用程序、Web应用程序、分布式系统应用程序、嵌入式系统应用程序等，从而使其成为应用最广泛的开发语言。",
-        "img": "/image/backend/java/java.png",
-        "doc": "https://www.runoob.com/java/java-tutorial.html",
-        "childrens": {
-            "bloom-filter": {
-                "title": "布隆过滤器的原理和实现",
-                "description": "布隆过滤器的原理和实现",
-                "img": "https://cdn.pixabay.com/photo/2022/02/16/14/47/bird-7016926_1280.jpg"
-            },
-            "idea": {
-                "title": "IDEA配置和快捷键",
-                "description": "用了sts三年了，网上都推荐idea，试试是不是传说中那么香，顺便记录一下一些基本配置和常用快捷键",
-                "img": "https://cdn.pixabay.com/photo/2022/05/31/18/40/hedge-7234019_1280.jpg"
-            },
-            "regex": {
-                "title": "正则表达式",
-                "description": "工作三年了，实习生拿了个正则表达式（.+?）来问我，我一时间没回答上来，发现自己还是太菜了，所以决定把用法复习一遍",
-                "img": "https://cdn.pixabay.com/photo/2022/05/31/16/47/automobile-7233867_960_720.jpg"
-            }
-        }
-    },
-    "spring": {
-        "title": "Spring",
-        "subTitle": "一个轻量级的基于控制反转(IoC)、面向切面(AOP)的容器框架。",
-        "description": "Spring 是一个开源框架，是为了解决企业应用程序开发复杂性而创建的。框架的主要优势之一就是其分层架构，分层架构允许您选择使用哪一个组件，同时为 J2EE 应用程序开发提供集成的框架。Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。任何 Java 应用都可以从 Spring 中受益。Spring 的核心是控制反转（IoC）和面向切面（AOP）。简单来说，Spring 是一个分层的 JavaSE/EE full-stack(一站式) 轻量级开源框架。",
-        "img": "/image/backend/spring/spring.png",
-        "doc": "https://spring.io/projects/spring-framework"
-    },
-    "springboot": {
-        "title": "Springboot",
-        "subTitle": "一个简化spring应用搭建和开发的框架。",
-        "description": "Spring Boot 是 Pivotal 团队在 Spring 的基础上提供的一套全新的开源框架，其目的是为了简化 Spring 应用的搭建和开发过程。Spring Boot 去除了大量的 XML 配置文件，简化了复杂的依赖管理。",
-        "img": "/image/backend/springboot/springboot.png",
-        "doc": "https://spring.io/projects/spring-boot"
-    },
-    "springcloud": {
-        "title": "Springcloud",
-        "subTitle": "一个一站式的分布式开发框架",
-        "description": "Spring Cloud为开发人员提供了快速构建分布式系统中一些常见模式的工具(比如：配置管理，服务发现，断路器，智能路由、微代理、控制总线、全局锁、决策竞选、分布式会话和集群状态管理等)。开发分布式系统都需要解决一系列共同关心的问题，而使用Spring Cloud可以快速地实现这些分布式开发共同关心的问题，并能方便地在任何分布式环境中部署与运行。",
-        "img": "/image/backend/springcloud/springcloud.png",
-        "doc": "https://spring.io/projects/spring-cloud"
-    },
-    "html": {
-        "title": "Html",
-        "subTitle": "一种用于创建网页的标准标记语言。",
-        "description": "HTML是一种基础技术，常与CSS、JavaScript一起被众多网站用于设计网页、网页应用程序以及移动应用程序的用户界面[3]。网页浏览器可以读取HTML文件，并将其渲染成可视化网页。",
-        "img": "/image/frontend/html/html.png",
-        "doc": "https://www.runoob.com/html/html-tutorial.html"
-    },
-    "vue": {
-        "title": "Vue",
-        "subTitle": "一套用于构建用户界面的渐进式框架",
-        "description": "Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持类库结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。",
-        "img": "/image/frontend/vue/vue.png",
-        "doc": "https://v3.cn.vuejs.org/guide/introduction.html",
-        "childrens": {
-            "reuse-component-router-bug": {
-                "title": "vue组件重用路由不刷新",
-                "description": "在使用vue-router时，经常会用到带参数的动态路由如 { path: '/users/:id', component: User }，当用户从 /users/johnny 导航到 /users/jolyne 时，因为指向的都是同一个组件，相同的组件实例将被重复使用（组件的生命周期钩子不会被调用），所以出现页面数据没有刷新的情况。",
-                "img": "https://cdn.pixabay.com/photo/2022/04/12/09/03/bird-7127630_1280.jpg"
-            }
-        }
-    },
-    "bug": {}
+  "java": {
+    "title": "Java",
+    "subTitle": "一种跨平台、面向对象的计算机编程语言",
+    "description": "Java是Sun公司推出的能够跨越多平台的、可移植性最高的一种面向对象的编程语言，也是目前最先进、特征最丰富、功能最强大的计算机语言。利用Java可以编写桌面应用程序、Web应用程序、分布式系统应用程序、嵌入式系统应用程序等，从而使其成为应用最广泛的开发语言。",
+    "img": "/image/backend/java/java.png",
+    "doc": "https://www.runoob.com/java/java-tutorial.html",
+    "childrens": {
+      "bloom-filter": {
+        "title": "布隆过滤器的原理和实现",
+        "description": "布隆过滤器的原理和实现",
+        "img": "https://cdn.pixabay.com/photo/2022/02/16/14/47/bird-7016926_1280.jpg"
+      },
+      "idea": {
+        "title": "IDEA配置和快捷键",
+        "description": "用了sts三年了，网上都推荐idea，试试是不是传说中那么香，顺便记录一下一些基本配置和常用快捷键",
+        "img": "https://cdn.pixabay.com/photo/2022/05/31/18/40/hedge-7234019_1280.jpg"
+      },
+      "regex": {
+        "title": "正则表达式",
+        "description": "工作三年了，实习生拿了个正则表达式（.+?）来问我，我一时间没回答上来，发现自己还是太菜了，所以决定把用法复习一遍",
+        "img": "https://cdn.pixabay.com/photo/2022/05/31/16/47/automobile-7233867_960_720.jpg"
+      },
+      "singleton": {
+        "title": "单例模式",
+        "description": "单例模式是面试中经常会被问到的一个问题，记录一下常见的单例模式",
+        "img": "https://cdn.pixabay.com/photo/2022/06/12/05/45/animal-7257336_960_720.jpg"
+      }
+    }
+  },
+  "spring": {
+    "title": "Spring",
+    "subTitle": "一个轻量级的基于控制反转(IoC)、面向切面(AOP)的容器框架。",
+    "description": "Spring 是一个开源框架，是为了解决企业应用程序开发复杂性而创建的。框架的主要优势之一就是其分层架构，分层架构允许您选择使用哪一个组件，同时为 J2EE 应用程序开发提供集成的框架。Spring使用基本的JavaBean来完成以前只可能由EJB完成的事情。任何 Java 应用都可以从 Spring 中受益。Spring 的核心是控制反转（IoC）和面向切面（AOP）。简单来说，Spring 是一个分层的 JavaSE/EE full-stack(一站式) 轻量级开源框架。",
+    "img": "/image/backend/spring/spring.png",
+    "doc": "https://spring.io/projects/spring-framework"
+  },
+  "springboot": {
+    "title": "Springboot",
+    "subTitle": "一个简化spring应用搭建和开发的框架。",
+    "description": "Spring Boot 是 Pivotal 团队在 Spring 的基础上提供的一套全新的开源框架，其目的是为了简化 Spring 应用的搭建和开发过程。Spring Boot 去除了大量的 XML 配置文件，简化了复杂的依赖管理。",
+    "img": "/image/backend/springboot/springboot.png",
+    "doc": "https://spring.io/projects/spring-boot"
+  },
+  "springcloud": {
+    "title": "Springcloud",
+    "subTitle": "一个一站式的分布式开发框架",
+    "description": "Spring Cloud为开发人员提供了快速构建分布式系统中一些常见模式的工具(比如：配置管理，服务发现，断路器，智能路由、微代理、控制总线、全局锁、决策竞选、分布式会话和集群状态管理等)。开发分布式系统都需要解决一系列共同关心的问题，而使用Spring Cloud可以快速地实现这些分布式开发共同关心的问题，并能方便地在任何分布式环境中部署与运行。",
+    "img": "/image/backend/springcloud/springcloud.png",
+    "doc": "https://spring.io/projects/spring-cloud"
+  },
+  "html": {
+    "title": "Html",
+    "subTitle": "一种用于创建网页的标准标记语言。",
+    "description": "HTML是一种基础技术，常与CSS、JavaScript一起被众多网站用于设计网页、网页应用程序以及移动应用程序的用户界面[3]。网页浏览器可以读取HTML文件，并将其渲染成可视化网页。",
+    "img": "/image/frontend/html/html.png",
+    "doc": "https://www.runoob.com/html/html-tutorial.html"
+  },
+  "vue": {
+    "title": "Vue",
+    "subTitle": "一套用于构建用户界面的渐进式框架",
+    "description": "Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持类库结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。",
+    "img": "/image/frontend/vue/vue.png",
+    "doc": "https://v3.cn.vuejs.org/guide/introduction.html",
+    "childrens": {
+      "reuse-component-router-bug": {
+        "title": "vue组件重用路由不刷新",
+        "description": "在使用vue-router时，经常会用到带参数的动态路由如 { path: '/users/:id', component: User }，当用户从 /users/johnny 导航到 /users/jolyne 时，因为指向的都是同一个组件，相同的组件实例将被重复使用（组件的生命周期钩子不会被调用），所以出现页面数据没有刷新的情况。",
+        "img": "https://cdn.pixabay.com/photo/2022/04/12/09/03/bird-7127630_1280.jpg"
+      }
+    }
+  },
+  "bug": {}
 }
